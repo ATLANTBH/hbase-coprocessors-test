@@ -10,6 +10,17 @@ import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.io.HbaseObjectWritable;
 import org.apache.hadoop.io.Writable;
 
+
+/**
+ * Defines batch operation to execute.
+ * 
+ * Rows to be affected by batch operation
+ * are defined by {@link Scan}.
+ * 
+ * Columns and/or values to be deleted/updated are 
+ * defined in a list of {@link Value} objects
+ *
+ */
 public class BatchOperation implements Writable {
 
   private Scan scan;

@@ -7,9 +7,11 @@ import java.io.IOException;
 import org.apache.hadoop.io.Writable;
 
 /**
+ * Defines result of batch operation.
  * 
- * @author
- * 
+ * Each batch operation returns number of
+ * records affected, and time that execution took.
+ *
  */
 public class BatchOperationResult implements Writable {
 
